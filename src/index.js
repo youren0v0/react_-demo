@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style/style.less'
+
+import './static/fonts/iconfont.css'
 import App from './App';
 import * as stores from './store/stores'
 import { Provider } from 'react-redux'

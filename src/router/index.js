@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {NewGame, Game, Counter, Mine} from '../containers'
+import {Login, Home, Check, Contract, Notification, Shop} from '../containers'
 import {Redirect, Route, HashRouter as Router} from 'react-router-dom'
 
 class AppRouter extends Component {
@@ -10,15 +10,12 @@ class AppRouter extends Component {
     return (
       <Router>
         <div>
-          <Route exact path="/" component={NewGame}></Route>
-          <Route path="/newGame" component={NewGame} ></Route>
-          <Route path="/game/:level" component={Game} ></Route>
-          <Route path="/newGame/:level" render={({ match }) => {
-            console.log(match)
-            return <Redirect to={`/game/${match.params.level}`}></Redirect>
-          }}></Route>
-          <Route path="/counter" component={Counter} ></Route>
-          <Route path="/mine" component={Mine} ></Route>
+          <Route exact path="/"></Route>
+          <Route path="/login" component={Login} ></Route>
+          <Route path="/notification" component={Notification} ></Route>
+          <Route path="/shop" component={Shop} ></Route>
+          <Route path="/contract" component={Contract} ></Route>
+          <Route path="/check" component={Check} ></Route>
         </div>
       </Router>
     )
