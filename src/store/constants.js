@@ -1,4 +1,12 @@
-export const TABLE = 'TABLE'
-export const ARR_NUM_OBJ = 'ARR_NUM_OBJ'
-export const ARR_CLEAR = 'ARR_CLEAR'
-export const ALL_ARR = 'ALL_ARR'
+
+export const user = {
+  LOGIN: 'LOGIN',
+  LOAD_LOCAL_USERINFO: 'LOAD_LOCAL_USERINFO',
+  SIGN_OUT: 'SIGN_OUT'
+
+}
+
+export const notification = {
+  NOTIFICATION_LIST: 'NOTIFICATION_LIST',
+  NOTIFICATION_DETAIL: 'NOTIFICATION_DETAIL'
+}

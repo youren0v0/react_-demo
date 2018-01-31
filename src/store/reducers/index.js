@@ -1,7 +1,7 @@
-import table from './table'
-import arrTable from './arrTable'
+import user from './user'
+import notification from './notification'
 import { combineReducers } from 'redux'
 export default combineReducers({
-  table,
-  arrTable
+  user,
+  notification
 })
